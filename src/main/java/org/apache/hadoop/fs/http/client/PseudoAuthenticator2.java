@@ -21,6 +21,7 @@ import java.net.URL;
 import org.apache.hadoop.security.authentication.client.AuthenticatedURL;
 import org.apache.hadoop.security.authentication.client.AuthenticationException;
 import org.apache.hadoop.security.authentication.client.Authenticator;
+import org.apache.hadoop.security.authentication.client.ConnectionConfigurator;
 import org.apache.hadoop.security.authentication.client.PseudoAuthenticator;
 
 /**
@@ -101,6 +102,12 @@ public class PseudoAuthenticator2 implements Authenticator {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	@Override
+	public void setConnectionConfigurator(ConnectionConfigurator arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
